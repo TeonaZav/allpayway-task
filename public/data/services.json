@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Web Development",
+    "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed di nonumy eirm tempor invidunt dolore.",
+    "iconName": "WebIcon"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Mobile Development",
+    "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed di nonumy eirm tempor invidunt dolore.",
+    "iconName": "MobileIcon"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "UI/UX Design",
+    "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed di nonumy eirm tempor invidunt dolore.",
+    "iconName": "DesignIcon"
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "title": "E-commerce Solutions",
+    "description": "Tailored e-commerce solutions that drive business growth and customer satisfaction.",
+   "iconName": "WebIcon"
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "title": "Digital Marketing",
+    "description": "We help businesses increase their visibility online through strategic digital marketing.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "title": "SEO Optimization",
+    "description": "Improve your search engine rankings with our expert SEO optimization services.",
+    "iconName": "SearchIcon"
+  },
+  {
+    "id": 7,
+    "number": "07",
+    "title": "Custom Software Development",
+    "description": "We create custom software solutions that are scalable and meet your unique needs.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 8,
+    "number": "08",
+    "title": "Cloud Solutions",
+    "description": "Secure, scalable, and cost-effective cloud solutions tailored to your business.",
+  "iconName": "WebIcon"
+  },
+  {
+    "id": 9,
+    "number": "09",
+    "title": "IT Consulting",
+    "description": "Professional IT consulting to help you make the most of your technology investments.",
+   "iconName": "WebIcon"
+  },
+  {
+    "id": 10,
+    "number": "10",
+    "title": "DevOps Services",
+    "description": "Automate and streamline your development and operations processes with our DevOps solutions.",
+   "iconName": "WebIcon"
+  },
+  {
+    "id": 11,
+    "number": "11",
+    "title": "AI & Machine Learning",
+    "description": "Unlock the potential of AI and machine learning to solve complex business challenges.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 12,
+    "number": "12",
+    "title": "Cybersecurity",
+    "description": "Protect your business from cyber threats with our comprehensive cybersecurity solutions.",
+    "iconName": "WebIcon"
+  },
+  {
+    "id": 13,
+    "number": "13",
+    "title": "Blockchain Development",
+    "description": "Harness the power of blockchain technology for secure and transparent transactions.",
+    "iconName": "WebIcon"
+  },
+  {
+    "id": 14,
+    "number": "14",
+    "title": "Augmented Reality",
+    "description": "Create engaging AR experiences to enhance customer interaction and business processes.",
+   "iconName": "WebIcon"
+  },
+  {
+    "id": 15,
+    "number": "15",
+    "title": "Virtual Reality Solutions",
+    "description": "Immerse your customers in virtual reality with tailored VR experiences.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 16,
+    "number": "16",
+    "title": "Data Analytics",
+    "description": "Leverage data analytics to gain actionable insights and drive business decisions.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 17,
+    "number": "17",
+    "title": "Business Intelligence",
+    "description": "Empower your business with intelligence solutions that turn data into valuable insights.",
+     "iconName": "WebIcon"
+  },
+  {
+    "id": 18,
+    "number": "18",
+    "title": "Content Management Systems",
+    "description": "Streamline your content workflow with powerful and easy-to-use CMS solutions.",
+  "iconName": "WebIcon"
+  },
+  {
+    "id": 19,
+    "number": "19",
+    "title": "IT Support & Maintenance",
+    "description": "Comprehensive IT support and maintenance services to ensure smooth operations.",
+  "iconName": "WebIcon"
+  },
+  {
+    "id": 20,
+    "number": "20",
+    "title": "Product Design",
+    "description": "Innovative product design services to create user-centered solutions that meet market needs.",
+   "iconName": "WebIcon"
+  }
+]
