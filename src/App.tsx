@@ -1,9 +1,12 @@
-import { useState } from "react";
-
+import AppRoutes from "./routes";
+import { GlobalStyle } from "./styles/GlobalStyles";
 function App() {
-
-
-  return <></>;
+  return (
+    <>
+      <GlobalStyle />
+      <AppRoutes />
+    </>
+  );
 }
 
 export default App;
