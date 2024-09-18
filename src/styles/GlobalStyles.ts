@@ -35,6 +35,7 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
 
   :root {
     /* Colors */
+    --clr-white: #ffffff;
     --clr-bg-primary: #ffffff;
 
     --clr-text-primary: #FBFBFB;
@@ -45,6 +46,7 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
     --clr-links-active: #55EDFF;
 
     --clr-btn-primary: #384BFF;
+    --clr-bg-card: #FBFBFB;
     --tag-bg-web: rgba(167, 81, 233, 0.30);
     --tab-bg-mobile: rgba(85, 237, 255, 0.30);
     --tag-bg-design: rgba(56, 75, 255, 0.30);
@@ -57,8 +59,6 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
     --fs-small: 1.5rem;
     --fs-xs: 1.2rem;
 
-    /* Borders */
-    --border: 1px solid #DBDBDB; 
   }
 
   *,
@@ -114,5 +114,8 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
   #root {
     height: 100%;
   }
-
+button, a{
+  font-family: inherit;
+  cursor: pointer;
+}
 `;
