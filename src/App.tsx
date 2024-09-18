@@ -1,12 +1,12 @@
+import { FC } from "react";
 import AppRoutes from "./routes";
-import { GlobalStyle } from "./styles/GlobalStyles";
-function App() {
+
+const App: FC = () => {
   return (
     <>
-      <GlobalStyle />
       <AppRoutes />
     </>
   );
-}
+};
 
 export default App;

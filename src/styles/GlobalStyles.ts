@@ -1,7 +1,37 @@
 import { createGlobalStyle } from "styled-components";
-import backgroundImage from "./../assets/images/main-bg.png";
+import mainBg1 from "./../assets/images/main-bg-1.png";
+import mainBg2 from "./../assets/images/main-bg-2.png";
 
-export const GlobalStyle = createGlobalStyle` 
+export const backgroundImages: {
+  [key: string]: { desktop: string; mobile: string };
+} = {
+  "/": {
+    desktop: mainBg1,
+    mobile: mainBg2,
+  },
+  "/services": {
+    desktop: mainBg1,
+    mobile: mainBg2,
+  },
+  "/projects": {
+    desktop: mainBg2,
+    mobile: mainBg2,
+  },
+  "/partners": {
+    desktop: mainBg1,
+    mobile: mainBg2,
+  },
+  "/about": {
+    desktop: mainBg1,
+    mobile: mainBg2,
+  },
+  "/contact": {
+    desktop: mainBg1,
+    mobile: mainBg2,
+  },
+};
+
+export const GlobalStyle = createGlobalStyle<{ pathname: string }>` 
 
   :root {
     /* Colors */
@@ -59,14 +89,27 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Roboto", system-ui;
-    background: url(${backgroundImage}) lightgray 50% / cover no-repeat;
+    
+    background: ${(props) =>
+      `url(${
+        backgroundImages[props.pathname]?.mobile || "none"
+      }) lightgray 50% / cover no-repeat`};
+    transition: background 0.1s ease-in-out; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
-  } 
+    scroll-behavior: smooth;
+
+    @media (min-width: 1440px) {
+      background: ${(props) =>
+        `url(${
+          backgroundImages[props.pathname]?.desktop || "none"
+        }) lightgray 50% / cover no-repeat`};
+    }
+  }
 
   #root {
     height: 100%;
