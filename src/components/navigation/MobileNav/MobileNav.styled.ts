@@ -16,6 +16,10 @@ export const SBurgerButton = styled.button.attrs({
   height: 16.343px;
   flex-shrink: 0;
   background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 10000;
+  position: relative;
 `;
 
 export const SDrawerContent = styled(DrawerContent)`

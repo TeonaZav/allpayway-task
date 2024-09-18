@@ -20,6 +20,7 @@ export const SNavLink = styled(NavLink)<NavLinkProps>`
   color: var(--clr-links);
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
 
   &.active {
     color: var(--clr-links-active);

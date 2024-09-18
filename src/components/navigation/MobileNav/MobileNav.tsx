@@ -14,7 +14,7 @@ const MobileNav: React.FC = () => {
 
   return (
     <SMobileNav>
-      <SBurgerButton onClick={onOpen}>
+      <SBurgerButton onClick={isOpen ? onClose : onOpen}>
         <BurgerIcon />
       </SBurgerButton>
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
