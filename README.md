@@ -20,7 +20,7 @@
 - **react-paginate**
 - **react-responsive**
 - **supabase/supabase-js**
-- **swiper**
+- **react-slick**
 
 ## Project Structure
 
