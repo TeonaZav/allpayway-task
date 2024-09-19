@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../../styles/Shared";
 
-export const SHompageContent = styled.div`
+export const SHompageContent = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -79,7 +79,6 @@ export const SButtonStart = styled(Button)`
     display: flex;
   }
 `;
-
 
 export const SButtonStartMobile = styled(Button)`
   @media (min-width: 1440px) {
