@@ -4,7 +4,7 @@ export const SArrowButton = styled.button`
   width: 5rem;
   height: 5rem;
   position: absolute;
-  top: 45%;
+  top: 42%;
   border-radius: 100%;
   border: none;
   cursor: pointer;
