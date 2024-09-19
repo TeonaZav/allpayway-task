@@ -22,7 +22,7 @@ const Carousel: FC = () => {
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={24}
-        slidesPerView={3}
+        slidesPerView={1}
         navigation={
           {
             prevEl: prevRef.current,

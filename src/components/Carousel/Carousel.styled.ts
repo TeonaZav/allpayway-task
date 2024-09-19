@@ -9,9 +9,8 @@ export const SArrowButton = styled.button`
   border: none;
   cursor: pointer;
   z-index: 1000;
-  svg {
-    fill: rgba(56, 75, 255, 0.58);
-  }
+  background-color: rgba(56, 75, 255, 0.58);
+
   &.custom-prev {
     left: 0;
   }
@@ -43,10 +42,8 @@ export const SCarouselWrapper = styled.div`
     display: none;
   }
 
-  margin-bottom: 6.6rem;
-
   @media (min-width: 1024px) {
-    padding-inline: 2.65rem;
+    padding-inline: 2.6rem;
   }
 `;
 

@@ -11,7 +11,11 @@ import LinkedinIcon from "./linkedin-icon.svg";
 
 import PlusIcon from "./plus-icon.svg";
 import ArrowRightIcon from "./arrow-right.svg";
+import ArrowLeftIcon from "./arrow-left.svg";
 import BraketIcon from "./bracket-icon.svg";
+
+import PrevIcon from "./prev-icon.svg";
+import NextIcon from "./next-icon.svg";
 
 export {
   Logo,
@@ -25,5 +29,8 @@ export {
   LinkedinIcon,
   PlusIcon,
   ArrowRightIcon,
+  ArrowLeftIcon,
   BraketIcon,
+  PrevIcon,
+  NextIcon,
 };

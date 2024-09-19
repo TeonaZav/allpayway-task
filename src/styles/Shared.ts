@@ -63,10 +63,6 @@ export const SectionHeading = styled.h2`
 
 export const Section = styled.section`
   width: 100%;
-  margin-bottom: 4.9rem;
-  @media (min-width: 1440px) {
-    margin-bottom: 8.4rem;
-  }
 `;
 
 export const Text = styled.p`
