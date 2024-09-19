@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { TextBox, Carousel } from "../index";
 import { Button } from "../../styles/Shared";
 import { ArrowLeftIcon } from "../../assets/icons";
@@ -19,7 +20,7 @@ const ProjectsContent: FC = () => {
         ]}
       />
       <Carousel />
-      <Button $gap="1.8rem">
+      <Button $gap="1.8rem" as={Link} to="/">
         <ArrowLeftIcon />
         back
       </Button>
