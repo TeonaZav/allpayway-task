@@ -30,7 +30,7 @@ export const SCarouselWrapper = styled.div`
   width: 100%;
   height: auto;
   position: relative;
-
+  z-index: 0;
   .swiper {
     width: 100%;
     height: 100%;
@@ -50,7 +50,7 @@ export const SCarouselWrapper = styled.div`
 export const SImageWrapper = styled.div`
   border-radius: 1rem;
   overflow: hidden;
-
+  z-index: 0;
   img {
     width: 100%;
     height: auto;
