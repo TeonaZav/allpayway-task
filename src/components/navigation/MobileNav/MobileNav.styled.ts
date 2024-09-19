@@ -12,8 +12,8 @@ export const SMobileNav = styled.nav`
 export const SBurgerButton = styled.button.attrs({
   type: "button",
 })`
-  width: 22px;
-  height: 16.343px;
+  width: 2.2rem;
+  height: auto;
   flex-shrink: 0;
   background-color: transparent;
   border: 1px solid transparent;
@@ -24,7 +24,7 @@ export const SBurgerButton = styled.button.attrs({
 
 export const SDrawerContent = styled(DrawerContent)`
   && {
-    background-color: hsla(244, 100%, 15%, 0.8);
+    background-color: hsla(244, 100%, 15%, 0.9);
     color: white;
     height: 100vh;
     width: 75% !important;
