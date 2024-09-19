@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# DevSpace app - Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [How to Test](#test)
+  - [Running the Application](#running-the-application)
+- [Online Demo](#online-demo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- **React**
+- **TS**
+- **styled-component**
+- **Vite**
+- **framer-motion**
+- **lottie-react**
+- **react-paginate**
+- **react-responsive**
+- **supabase/supabase-js**
+- **swiper**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Project Structure
 
-- Configure the top-level `parserOptions` property like this:
+- `public`: Static assets and public files, accessible directly in the browser (e.g., logos, JSON data).
+- `src/assets`: Static resources like images, icons, and SVGs.
+- `src/components`: All the UI components organized by feature, like `AboutContent`, `Header`, `Footer`, etc.
+- `src/hooks`: Contains reusable React hooks.
+- `src/pages`: Page-level components that correspond to different routes.
+- `src/services`: Handles API calls or services, such as `supabaseClient.ts` for database interaction.
+- `src/styles`: Global and theme-related styles.
+- `src/utils`: General utility functions used across the app.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to Test
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Running the Application
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To test the application, you can start the development server and explore the functionality manually. Here are the steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Setting Up the Environment:**
+
+   - Ensure you have Node.js and npm installed on your machine.
+
+   ```bash
+   git clone https://github.com/TeonaZav/allpayway-task.git>
+   ```
+
+2. **Starting the Development Server:**
+   - Install the necessary dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the development server:
+     ```bash
+     npm run dev
+     ```
+
+### Online Demo
+
+You can also visit the deployed version of the application on Vercel:
+
+- [Concept Homepage on Vercel](https://allpayway-task.vercel.app/)
