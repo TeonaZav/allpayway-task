@@ -16,6 +16,10 @@ import BraketIcon from "./bracket-icon.svg";
 
 import PrevIcon from "./prev-icon.svg";
 import NextIcon from "./next-icon.svg";
+import ChevronsRight from "./chevrons-right.svg";
+import ChevronsLeft from "./chevrons-left.svg";
+import ChevronRight from "./chevron-right.svg";
+import ChevronLeft from "./chevron-left.svg";
 
 export {
   Logo,
@@ -33,4 +37,8 @@ export {
   BraketIcon,
   PrevIcon,
   NextIcon,
+  ChevronsRight,
+  ChevronsLeft,
+  ChevronRight,
+  ChevronLeft,
 };
