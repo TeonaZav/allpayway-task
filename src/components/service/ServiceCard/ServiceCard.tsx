@@ -9,7 +9,7 @@ import {
 import * as Icons from "./../../../assets/icons";
 import { ArrowRightIcon } from "./../../../assets/icons";
 
-interface ServiceCardProps {
+interface IServiceCardProps {
   id: number;
   title: string;
   description: string;
@@ -17,7 +17,7 @@ interface ServiceCardProps {
   index: number;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({
+const ServiceCard: React.FC<IServiceCardProps> = ({
   title,
   description,
   iconName,

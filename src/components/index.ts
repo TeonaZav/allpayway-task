@@ -8,6 +8,7 @@ import Carousel from "./Carousel/Carousel";
 import ProjectsContent from "./ProjectsContent/ProjectContent";
 import AboutContent from "./AboutContent/AboutContent";
 import TeamMemberCard from "./team/TeamMemberCard/TeamMemberCard";
+import ServicesContent from "./service/ServicesContent";
 
 export {
   Layout,
@@ -19,5 +20,6 @@ export {
   Carousel,
   ProjectsContent,
   AboutContent,
-  TeamMemberCard
+  TeamMemberCard,
+  ServicesContent,
 };

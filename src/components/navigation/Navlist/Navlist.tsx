@@ -1,13 +1,13 @@
 import React from "react";
 import { SNavList, SNavLink } from "./Navlist.styled";
 
-interface NavItem {
+interface INavItem {
   label: string;
   to: string;
   end?: boolean;
 }
 
-const navItems: NavItem[] = [
+const navItems: INavItem[] = [
   { label: "Home", to: "/", end: true },
   { label: "Services", to: "/services" },
   { label: "Projects", to: "/projects" },

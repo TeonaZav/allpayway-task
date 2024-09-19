@@ -4,6 +4,8 @@ import { Section, Button } from "../../../styles/Shared";
 export const SServicListWrapper = styled(Section)`
   display: flex;
   flex-direction: column;
+  margin-top: 4.8rem;
+  margin-bottom: 8.7rem;
 
   ${Button} {
     margin: 0 auto;
@@ -11,6 +13,8 @@ export const SServicListWrapper = styled(Section)`
 
   @media (min-width: 1440px) {
     padding-inline: 2.65rem;
+    margin-top: 8.4rem;
+    margin-bottom: 8.9rem;
   }
 `;
 
