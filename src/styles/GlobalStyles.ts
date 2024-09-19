@@ -94,7 +94,7 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
       `url(${
         backgroundImages[props.pathname]?.mobile || "none"
       }) lightgray 50% / cover no-repeat`};
-    transition: background 0.1s ease-in-out; 
+  
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -114,8 +114,10 @@ export const GlobalStyle = createGlobalStyle<{ pathname: string }>`
   #root {
     height: 100%;
   }
-button, a{
+  
+    button, a{
   font-family: inherit;
   cursor: pointer;
-}
+  -webkit-tap-highlight-color: transparent;
+  }
 `;
