@@ -18,6 +18,7 @@ export const SCard = styled.article`
     border-radius: 1rem;
     background-color: var(--clr-bg-card);
     padding: 1.8rem;
+    overflow: hidden;
 
     &:nth-child(3n + 1) ${SIconWrapper} {
       background-color: var(--tag-bg-web);
@@ -42,9 +43,8 @@ export const SCardHeader = styled.div`
 export const SCardBody = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
 
-  h3 {
+  h4 {
     font-size: 2.2rem;
     color: var(--clr-text-secondary);
     font-weight: 600;
@@ -53,6 +53,7 @@ export const SCardBody = styled.div`
   p {
     font-size: var(--fs-xs);
     font-weight: 600;
+    margin-bottom: 0.9rem;
   }
 `;
 
