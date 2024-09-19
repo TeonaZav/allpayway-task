@@ -8,7 +8,11 @@ export const SLayout = styled.div`
 
 export const SMain = styled.main`
   flex: 1;
-  padding-top: 12.58rem;
+  padding-top: 6.8rem;
+
+  @media (min-width: 1440px) {
+    padding-top: 12.58rem;
+  }
 `;
 
 export const SPathname = styled.h2`
