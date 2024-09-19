@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,20 +17,26 @@ const Carousel: FC = () => {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (prevRef.current && nextRef.current) {
+        prevRef.current.classList.add("custom-prev");
+        nextRef.current.classList.add("custom-next");
+      }
+    }, 100);
+  }, [prevRef, nextRef]);
+
   return (
     <SCarouselWrapper>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={24}
         slidesPerView={1}
-        navigation={
-          {
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          } as any
-        }
-        pagination={{ clickable: true }}
         loop={true}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -63,11 +69,12 @@ const Carousel: FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <SArrowButton ref={prevRef} className="custom-prev">
+
+      <SArrowButton ref={prevRef}>
         <PrevIcon />
       </SArrowButton>
 
-      <SArrowButton ref={nextRef} className="custom-next">
+      <SArrowButton ref={nextRef}>
         <NextIcon />
       </SArrowButton>
     </SCarouselWrapper>
