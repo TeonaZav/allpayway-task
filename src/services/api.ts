@@ -1,10 +1,9 @@
 import { supabase } from "./supabaseClient";
+import { ITeamMember } from "./types";
 
-export interface Service {
-  id: number;
-  title: string;
-  description: string;
-  iconName: string;
+interface IFetchTeamMembersResponse {
+  data: ITeamMember[];
+  count: number;
 }
 
 export const fetchServices = async (limit?: number, offset?: number) => {
@@ -35,4 +34,22 @@ export const fetchLocalServices = async () => {
     console.error("Error fetching local services:", error);
     throw error;
   }
+};
+
+export const fetchTeamMembers = async (
+  page: number,
+  itemsPerPage: number
+): Promise<IFetchTeamMembersResponse> => {
+  const { data, count, error } = await supabase
+    .from("team")
+    .select("*", { count: "exact" })
+    .range(page * itemsPerPage, (page + 1) * itemsPerPage - 1);
+
+  if (error) {
+    throw new Error("Failed to fetch team members");
+  }
+
+  console.log(data);
+
+  return { data: data || [], count: count || 0 };
 };

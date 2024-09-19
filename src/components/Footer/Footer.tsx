@@ -16,13 +16,13 @@ import {
   LinkedinIcon,
 } from "../../assets/icons";
 
-interface SocialLink {
+interface ISocialLink {
   href: string;
   icon: ReactNode;
   label: string;
 }
 
-const socialLinks: SocialLink[] = [
+const socialLinks: ISocialLink[] = [
   { href: "#", icon: <FbIcon />, label: "Facebook" },
   { href: "#", icon: <InstagramIcon />, label: "Instagram" },
   { href: "#", icon: <TwitterIcon />, label: "Twitter" },

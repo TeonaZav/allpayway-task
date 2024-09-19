@@ -8,7 +8,7 @@ export const SHompageContent = styled.section`
   align-items: center;
   margin: 0 auto;
   gap: 2rem;
-
+  margin-bottom: 9rem;
   ${Button} {
     width: 100%;
     height: 4.8rem;
@@ -35,9 +35,7 @@ export const SHompageContent = styled.section`
   }
 
   @media (min-width: 1440px) {
-    flex-direction: row;
     gap: 5rem;
-    align-items: flex-start;
 
     figure {
       img {
@@ -70,18 +68,5 @@ export const SHeading = styled.h1`
   @media (min-width: 1440px) {
     font-size: 4rem;
     margin-bottom: 3.8rem;
-  }
-`;
-
-export const SButtonStart = styled(Button)`
-  display: none;
-  @media (min-width: 1440px) {
-    display: flex;
-  }
-`;
-
-export const SButtonStartMobile = styled(Button)`
-  @media (min-width: 1440px) {
-    display: none;
   }
 `;
