@@ -6,13 +6,16 @@ export const Container = styled.div`
   margin: 0 auto;
   padding-inline: 1.6rem;
 
+  @media (min-width: 768px) {
+    padding-inline: 3.2rem;
+  }
   @media (min-width: 1440px) {
     padding-inline: 0;
     max-width: 1250px;
   }
 `;
 
-export const Button = styled.button<{ $gap?: string }>`
+export const Button = styled.button<{ $gap?: string; $bgColor?: string }>`
   width: 15.2rem;
   height: 4.8rem;
   flex-shrink: 0;
@@ -20,8 +23,11 @@ export const Button = styled.button<{ $gap?: string }>`
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: capitalize;
-  background-color: var(--clr-btn-primary);
-  color: var(--clr-white);
+  text-decoration: none;
+
+  background-color: ${({ $bgColor }) => $bgColor || "var(--clr-btn-primary)"};
+  color: ${({ $bgColor }) =>
+    $bgColor === "white" ? "var(--clr-text-secondary)" : "var(--clr-white)"};
   display: inline-flex;
   align-items: center;
   justify-content: center;

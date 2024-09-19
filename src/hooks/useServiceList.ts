@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { fetchServices, fetchLocalServices,} from "../services/api";
+import { fetchServices, fetchLocalServices } from "../services/api";
 
 export const useServiceList = () => {
   const [showAll, setShowAll] = useState<boolean>(false);
   const limit = 3;
-
 
   const {
     data: initialServices = [],
@@ -21,11 +20,10 @@ export const useServiceList = () => {
         return fetchLocalServices().then((data) => data.slice(0, 3));
       }
     },
-    staleTime: 1000 * 60 * 5, 
+    staleTime: 1000 * 60 * 5,
     retry: 1,
   });
 
- 
   const {
     data: remainingServices = [],
     error: remainingError,
@@ -35,21 +33,23 @@ export const useServiceList = () => {
     queryFn: async () => {
       return fetchServices(17, limit);
     },
-    enabled: showAll, 
-    staleTime: 1000 * 60 * 5, 
+    enabled: showAll,
+    staleTime: 1000 * 60 * 5,
     retry: 1,
   });
-
 
   const loadMoreServices = () => {
     setShowAll(true);
   };
+  const allServices = [...initialServices, ...remainingServices];
+  const allServicesLoaded = allServices.length >= 20;
 
   return {
-    services: [...initialServices, ...remainingServices], 
+    services: allServices,
     loading: initialLoading || remainingLoading,
     error: initialError || remainingError,
     showAll,
     loadMoreServices,
+    allServicesLoaded,
   };
 };
